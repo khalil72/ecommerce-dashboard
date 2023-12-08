@@ -3,6 +3,7 @@ import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 import productSlice from './Reducer/products'
+import api from './Reducer/api'
 
 
 
@@ -14,6 +15,7 @@ const persistConfig = {
 
 const reducer = combineReducers({
  product:productSlice,
+ api:api
 })
 
 const persistedReducer = persistReducer(persistConfig, reducer)

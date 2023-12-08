@@ -26,6 +26,12 @@ const Sidenav = () => {
             product
           </Link>
         </li>
+        <li className="nav-item pb-3">
+          <Link to="/dashbaord/api/getdata" className="nav-link">
+            Php_api
+          </Link>
+        </li>
+    
         <li className="nav-item border-none bg-dark text-white cursor-pointer" onClick={handleLogout}>
           logout
         </li>

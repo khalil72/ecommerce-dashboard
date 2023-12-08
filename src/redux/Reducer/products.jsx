@@ -97,8 +97,8 @@ const productSlice = createSlice({
         builder.addCase(updateProduct.fulfilled, (state, action) => {
             state.product = state.product.filter(product =>  product.id === action.payload);
             state.loading = false;
-            console.log('Current state:', state);
-            console.log('Action payload:', action.payload);
+            // console.log('Current state:', state);
+            // console.log('Action payload:', action.payload);
             // console.log('delete product not get')
         });
         builder.addCase(updateProduct.rejected, (state, action) => {
